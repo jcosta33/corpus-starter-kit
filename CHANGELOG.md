@@ -33,6 +33,6 @@ not customized (see `docs/ADOPTING.md` → *Upgrading* in the Swarm repo).
   one worked `examples/` chain; the optional `advanced/` templates and reference cards;
   `.gitignore.additions` for governed code repos.
 
-[Unreleased]: https://github.com/jcosta33/swarm-starter-kit/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/jcosta33/swarm-starter-kit/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/jcosta33/swarm-starter-kit/releases/tag/v1.0.0
+Tagged releases (once cut) live at
+<https://github.com/jcosta33/swarm-starter-kit/releases>; compare links are added here as each tag
+is pushed.

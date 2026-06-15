@@ -24,6 +24,11 @@ anything if `swarm` is on your PATH — swarm-cli is not yet on npm, so install 
 
 To override a blocking result for one commit: `git commit --no-verify` (CI will still gate the merge).
 
+**Co-located workspace?** If you copied the kit into a subfolder of a code repo (e.g.
+`your-repo/workspace/`), the staged paths are `workspace/specs/…`, not `specs/…` — edit the
+`grep -E` prefix in `pre-commit` (and run `swarm check workspace/` in the CI step) to match where
+your specs actually live.
+
 ## Install the CI workflow
 
 ```sh
