@@ -6,12 +6,15 @@ copy-when-needed, not active in the kit itself. Claude Code discovers agents fro
 
 ## `swarm-reviewer`
 
-An independent, read-only reviewer for a finished Swarm task. The point of shipping it as a Claude Code
-*agent* (rather than only a skill) is the `tools:` allowlist — `Read, Grep, Glob, Bash`, with no Edit
-or Write — which makes "the reviewer does not edit source" an **enforced** capability, not an
-honor-system convention. It re-runs the task's Verify checks itself, drafts the kit's
-`templates/review.md` packet, and never issues a verdict (the human owns Pass/Fail; ADR-0077). It is
-the runner projection of the catalog's `persona-skeptic` + `review-output` discipline.
+An independent reviewer for a finished Swarm task. Shipping it as a Claude Code *agent* (rather than
+only a skill) lets the `tools:` allowlist — `Read, Grep, Glob, Bash`, with no Edit/Write — **narrow the
+edit surface** the reviewer reaches for. It is *not* full enforcement: `Bash` is granted (the reviewer
+re-runs the task's Verify checks) and a shell can still write, so "does not edit source" remains a
+convention the body carries (ADR-0063 — "enforced" is reserved for a tool that actually enforces).
+Real enforcement would need a `PreToolUse` hook that blocks write-ish Bash — a future step. The probe
+re-runs the Verify checks itself, drafts the kit's `templates/review.md` packet, and never issues a
+verdict (the human owns Pass/Fail; ADR-0077). It is the runner projection of the catalog's
+`persona-skeptic` + `review-output` discipline.
 
 ## Status: experimental
 

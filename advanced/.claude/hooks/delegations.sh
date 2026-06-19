@@ -10,7 +10,9 @@
 # Wire it in `.claude/settings.json` (see README.md). Pass the event name as argv[1].
 set -eu
 
-dir=".swarm/work"
+# Anchor to the repo root so traces always collect in one place, regardless of the hook's cwd.
+root="$(git rev-parse --show-toplevel 2>/dev/null || echo .)"
+dir="$root/.swarm/work"
 mkdir -p "$dir"
 out="$dir/delegations.ndjson"
 
@@ -26,6 +28,10 @@ if command -v jq >/dev/null 2>&1 && printf '%s' "$payload" | jq -e . >/dev/null 
         '{ts: $ts, event: $event,
           worker: (.subagent_type // .agent_type // .name // "unknown"),
           reason: (.prompt // .description // null),
+          inputs: (.inputs // .prompt // null),
+          filtered: (.filtered // null),
+          tools: (.tools // null),
+          could_edit: (.could_edit // null),
           evidence: (.result // .summary // null),
           raw: .}' >> "$out"
 else
