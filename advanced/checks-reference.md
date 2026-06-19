@@ -2,8 +2,8 @@
 
 <!-- The review checklist for specs, tasks, and review packets. Levels:
      convention = expected practice · checklist = review inspects it ·
-     toolable = a future `swarm check` can flag it. Nothing in this kit is
-     machine-enforced; teams may treat any item as blocking by policy. -->
+     toolable = `swarm check` (swarm-cli, shipped) can flag it. Nothing in this kit
+     itself is machine-enforced; teams may treat any item as blocking by policy. -->
 
 ## Spec checks (both forms)
 

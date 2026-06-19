@@ -13,9 +13,10 @@ description: >-
 # Checking a spec
 
 A defect in a spec is cheapest to catch before any task is cut from it — after that, every
-agent run inherits it. This guide runs the check by hand and produces a short report. A future
-`swarm check` (swarm-cli) automates exactly this; until then, you are the checker, and the
-result is a review checklist, not a gate.
+agent run inherits it. This guide runs the check by hand and produces a short report.
+`swarm check` (swarm-cli, shipped) automates exactly this contract; run it by hand when the CLI
+is not wired into your workspace. Either way the result is a review checklist, not a gate —
+whether it blocks is the team's policy.
 
 ## The one rule: check, don't edit
 

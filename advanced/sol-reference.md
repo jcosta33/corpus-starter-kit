@@ -63,5 +63,5 @@ AFFECTS AC-001
 - IDs are stable; cross-file references read `SPEC-x#AC-001`.
 - Both surfaces (plain and SOL) encode the same requirement record — same IDs, same
   strength words, same verification refs. Reviews and checks treat them identically.
-- This card is a convention reference — nothing here is enforced by a tool; the
-  `spec-check` guide (and a future `swarm check`) covers the checklist.
+- This card is a convention reference — nothing in this card is enforced by a tool; the
+  `spec-check` guide (and `swarm check`, swarm-cli, shipped) covers the checklist.
