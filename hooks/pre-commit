@@ -1,5 +1,5 @@
 #!/bin/sh
-# Swarm pre-commit hook — runs `swarm check` on the staged spec/review/task files.
+# Swarm pre-commit hook — runs `swarm check` on the staged spec/review files.
 #
 # This is a FAIL-OPEN convenience gate: if swarm-cli is not on PATH it skips with a hint and never
 # blocks a teammate who hasn't installed the tool. CI is the authoritative gate (see swarm-check.yml).
@@ -16,8 +16,10 @@ if ! command -v swarm >/dev/null 2>&1; then
     exit 0
 fi
 
-# Only the staged spec/review/task markdown files (added/copied/modified).
-files=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(specs|reviews|tasks)/.+\.md$' || true)
+# Only the staged spec/review markdown files (added/copied/modified). Task files are not gated here:
+# `swarm check` has no task-checks yet, so a staged task would draw misleading spec diagnostics —
+# add `tasks` back once task checks ship.
+files=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(specs|reviews)/.+\.md$' || true)
 [ -z "$files" ] && exit 0
 
 status=0
