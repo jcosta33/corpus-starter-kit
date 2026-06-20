@@ -18,8 +18,10 @@ fi
 
 # Only the staged spec/review markdown files (added/copied/modified). Task files are not gated here:
 # `swarm check` has no task-checks yet, so a staged task would draw misleading spec diagnostics —
-# add `tasks` back once task checks ship.
-files=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(specs|reviews)/.+\.md$' || true)
+# add `tasks` back once task checks ship. The per-directory index READMEs (specs/README.md,
+# reviews/README.md) are excluded: they are not artifacts, carry no frontmatter, and would otherwise
+# make `swarm check` error and block the FIRST commit of a freshly-scaffolded workspace.
+files=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(specs|reviews)/.+\.md$' | grep -vE '(^|/)README\.md$' || true)
 [ -z "$files" ] && exit 0
 
 status=0

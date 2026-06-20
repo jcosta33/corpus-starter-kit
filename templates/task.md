@@ -24,6 +24,11 @@ Implement or preserve:
 
 ## Do not change
 
+<!-- Each entry is a backticked path to protect (`- \`src/auth/\` — rotation logic is frozen`). Keep this
+     section to REAL protections: a path named only incidentally in a note (e.g. "code goes under
+     `pastebin/`") is still read as a backticked path and surfaced as a human-attention warning if a
+     change touches it — so describe layout elsewhere, not here. -->
+
 - {{areas explicitly out of bounds}}
 
 ## Affected areas
