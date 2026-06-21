@@ -7,3 +7,15 @@ tmp/
 
 # Local state of the future Swarm CLI (machine state, never committed)
 .swarm/
+
+# Isolated task worktrees (`swarm worktree create` puts them here, inside the repo) — committing one
+# stages an embedded gitlink, never what you want.
+.worktrees/
+
+# If this workspace is CO-LOCATED with your code (the same repo holds specs/ and the app), add your
+# language's build/cache ignores too, or `swarm review` will flag committed bytecode/artifacts as
+# out-of-scope changes. Common ones (uncomment what applies):
+#   __pycache__/   *.py[cod]        # Python
+#   node_modules/  dist/            # Node
+#   target/                         # Rust / JVM
+#   *.sqlite3      *.db             # local SQLite databases

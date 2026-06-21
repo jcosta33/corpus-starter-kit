@@ -24,10 +24,13 @@ Implement or preserve:
 
 ## Do not change
 
-<!-- Each entry is a backticked path to protect (`- \`src/auth/\` — rotation logic is frozen`). Keep this
-     section to REAL protections: a path named only incidentally in a note (e.g. "code goes under
-     `pastebin/`") is still read as a backticked path and surfaced as a human-attention warning if a
-     change touches it — so describe layout elsewhere, not here. -->
+<!-- Each entry is a backticked path to protect (`- \`src/auth/\` — rotation logic is frozen`). It is a
+     PATH WALL, not prose: any backticked path in this section is protected in FULL. Two traps to avoid —
+     (1) a path named only incidentally in a note (e.g. "code goes under `pastebin/`") is still read as a
+     protected path and surfaced as a human-attention warning if a change touches it; (2) naming a file
+     here to exempt PART of it ("the bootstrap block at the bottom of `src/server.ts`") protects the WHOLE
+     file — editing any of `src/server.ts` then warns. Describe layout and partial carve-outs in prose
+     elsewhere (the Scope or a note), and keep this section to whole paths that are genuinely frozen. -->
 
 - {{areas explicitly out of bounds}}
 
