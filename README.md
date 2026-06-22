@@ -26,6 +26,8 @@ templates/           the eight core artifact templates — spec, task, review, f
                      status, intake, inventory, change-plan
 specs/ intake/ tasks/ reviews/ findings/ inventory/ change-plans/
                      the flow folders, each with a one-line README saying what lands there
+archive/             where transitory output (closed review/run artifacts) ages out — durable
+                     records (specs, decisions, findings) stay live; see archive/README.md
 decisions/           your ADR ledger, seeded with 0001-adopt-swarm
 status.md            the hand-edited workboard
 examples/            one worked chain (ticket → spec → task → review → finding) —
