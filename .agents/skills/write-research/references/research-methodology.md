@@ -26,7 +26,10 @@ to Level 5 mechanism-based reasoning — "the likely strongest evidence is furth
 5. **Measured product behavior you ran yourself**, output recorded.
 6. **Mechanism-based reasoning / a single uncorroborated report / vendor commentary** — Level 5: weakest, cite only with the primary source it rests on.
 
-A source's level is its *ceiling*, not its score — §2 takes it down from there.
+This re-prioritizes the guide's general rule 3 order for *empirical* questions: a standard or spec
+is authoritative for what is *defined* but says nothing about what *performs*, so for a
+performance/effect question it ranks below an independent study. A source's level is its *ceiling*,
+not its score — §2 takes it down from there.
 
 ## 2. Downgrade / upgrade checks (adapted from GRADE)
 
@@ -68,7 +71,7 @@ What you *saw* (the benchmark printed 4,200 req/s; the abstract states 91% pass@
 and it carries the confidence from §2. Blur the two and an indirect or imprecise observation gets
 laundered into a high-confidence claim. PRISMA's reporting discipline makes this concrete: report
 the full search and the per-outcome certainty so a reader can re-judge [[PRISMA-2020]] — for a
-research note, that means the evidence field shows what you found and how, not just the verdict.
+research note, that means the evidence field shows what you found and how, not just the conclusion.
 
 ## 5. The Rejected trail (auditable)
 
@@ -98,8 +101,8 @@ author to re-cite the same bad source; the trail is the evidentiary audit. (This
 - **[[PRISMA-2020]]** *The PRISMA 2020 statement: an updated guideline for reporting systematic
   reviews.* Page, McKenzie, Bossuyt, et al. **BMJ 2021;372:n71**, DOI 10.1136/bmj.n71. *Tier:
   primary-official (peer-reviewed reporting guideline).* A 27-item checklist; item 7 requires the
-  full search strategy; items 15/22 require describing and presenting a per-outcome certainty
-  assessment (GRADE named as the example method).
+  full search strategy; items 18 and 22 require describing the methods for, and presenting, a
+  per-outcome certainty assessment (GRADE named as the example method).
   <https://www.bmj.com/content/372/bmj.n71>
 - **[[PREDATORY-DEF]]** *Predatory journals: no definition, no defence.* Grudniewicz, Moher, Cobey,
   et al. (35-author consensus). **Nature 2019;576(7786):210–212**, DOI 10.1038/d41586-019-03759-y.
