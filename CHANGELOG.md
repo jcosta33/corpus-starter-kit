@@ -12,6 +12,21 @@ not customized (see `docs/ADOPTING.md` → *Upgrading* in the Swarm repo).
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-06-22
+
+### Added
+- `templates/change-plan.md` — a prompt under **Affected surfaces** to enumerate *callers* (from
+  the inventory's `Current interfaces → Callers` column), not only edit sites, when the surface is
+  a shared signature or interface ([swarm-hq #48](https://github.com/jcosta33/swarm-hq/issues/48)).
+- `LICENSE` — MIT, matching the rest of the family.
+
+### Changed
+- `.agents/skills/adversarial-review/SKILL.md` — a Rule-0 load directive (a top-of-body,
+  point-of-need 1-hop link) so the bundled `references/task-template.md` is actually loaded, not
+  merely listed ([swarm-hq #45/#56](https://github.com/jcosta33/swarm-hq/issues/45)).
+- `advanced/` — redirected to the [swarm-agents](https://github.com/jcosta33/swarm-agents)
+  catalog as the single source for agent definitions; removed the in-kit probe.
+
 ## [1.2.0] - 2026-06-18
 
 ### Added
