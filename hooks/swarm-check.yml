@@ -1,4 +1,4 @@
-# Swarm spec-check — the authoritative gate.
+# Corpus spec-check — the authoritative gate.
 #
 # Copy to .github/workflows/swarm-check.yml in your workspace repo. It runs `swarm check` over the
 # workspace on every pull request and on pushes to main: exit 2 fails the job (blocking), exit 1

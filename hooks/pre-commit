@@ -1,5 +1,5 @@
 #!/bin/sh
-# Swarm pre-commit hook — runs `swarm check` on the staged spec/review files.
+# Corpus pre-commit hook — runs `swarm check` on the staged spec/review files.
 #
 # This is a FAIL-OPEN convenience gate: if swarm-cli is not on PATH it skips with a hint and never
 # blocks a teammate who hasn't installed the tool. CI is the authoritative gate (see swarm-check.yml).
