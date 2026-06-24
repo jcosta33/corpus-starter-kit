@@ -23,8 +23,11 @@ table — every row Unverified; the change-plan coverage table and the rest you 
 ## Rules
 
 1. **Never review your own implementation.** If you wrote the diff, hand the
-   review to another agent or a person. _Why: authors favor their own output;
-   independence is what makes the packet worth reading._
+   review to another agent or a person. For fresh-context independence, delegate
+   to the `corpus-reviewer` agent (corpus-agents): it runs in an isolated context
+   the parent can't prime and returns the packet, not a recommendation to the
+   parent thread — optional, only if you've installed corpus-agents. _Why: authors
+   favor their own output; independence is what makes the packet worth reading._
 2. **The worker's paste is a claim; your run is evidence.** Re-run the checks
    yourself wherever possible — resolve commands from the AGENTS.md `Commands`
    table; if a needed command is missing there, ask, never guess. Paste _your_
