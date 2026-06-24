@@ -51,10 +51,11 @@ enforces them at edit time.
    concurrency)? What changed that the spec did not ask for? Which callers of
    a changed surface did you not look at? Fix what you find and note what you
    fixed. _Why: the cheapest review round is the one you run on yourself._
-8. **Fill the packet's `## Run summary` section**: changed files, one line
-   per Verify command citing its pasted output, anything that could not be
-   met as written, out-of-scope edits if any, blocked questions — and drop
-   durable discoveries in the packet's `## Findings` section.
+8. **Record the run** — for 1:1 work (no task) fill the spec's `## Execution`
+   section; for a split task fill the task's `## Run summary`. Either way:
+   changed files, one line per Verify command citing its pasted output, anything
+   that could not be met as written, out-of-scope edits if any, blocked questions
+   — and drop durable discoveries in `## Findings`.
 9. **Never write a review result on your own work.** Self-review yields fixes
    and notes — never a Pass. The review packet is filled by someone who did
    not write the diff. _Why: authors favor their own output; independence is

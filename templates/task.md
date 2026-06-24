@@ -16,6 +16,10 @@ status: ready
 
 # Task: {{title}}
 
+<!-- Cut a task ONLY when a spec splits into parallel slices (split-work). For 1:1 work there is no
+     task — the implementer fills the spec's `## Execution` section instead. This packet is the
+     write-disjoint slice: a scope-subset of one spec, with its own execution + review. (ADR-0103) -->
+
 ## Source
 
 - Spec: `specs/{{feature}}/spec.md` (SPEC-{{slug}})

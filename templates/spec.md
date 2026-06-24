@@ -56,3 +56,16 @@ Verify with: `{{test-name-or-command}}`
      deliberately leaves out, and why. Design rationale lives here. -->
 
 - {{dropped item — reason}}
+
+## Execution
+
+<!-- Append-only, filled by the IMPLEMENTER as the work is done — for 1:1 work, when the spec was not
+     split into tasks. The contract above freezes at `status: ready`; this section grows after it.
+     For split work, the per-slice execution lives in each task instead. The independent review packet
+     (`reviews/`) stays separate — this is the implementer's run record, not the verdict. Omit it on a
+     spec that was split into tasks. (ADR-0103) -->
+
+- Affected areas: {{paths actually touched}}
+- Verify results: {{one line per AC's `Verify with:` command, citing the pasted output}}
+- Run summary: {{changed files; out-of-scope edits with reasons; blocked questions}}
+- Self-review (ADR-0056): {{what you attacked; what it surfaced + fixed; residual risk for the reviewer}}

@@ -25,6 +25,10 @@ not customized (see `docs/ADOPTING.md` → _Upgrading_ in the Corpus repo).
 - `advanced/checks-reference.md` + `advanced/sol-reference.md` are now **pointers** to the canonical
   `docs/reference/` instead of duplicated copies (they had drifted); `spec-check` points at the canon
   (corpus ADR-0102).
+- **Spec is the unit of work; the task is an on-demand split slice** (corpus ADR-0103). The spec
+  template gains an append-only `## Execution` section the implementer fills for 1:1 work — no task
+  file unless the spec splits into parallel slices. The task template, `split-work`, `implement-task`,
+  and `review-output` are reworded to match. Additive: existing specs and tasks stay valid.
 
 ## [1.3.0] - 2026-06-22
 

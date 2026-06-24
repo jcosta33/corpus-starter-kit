@@ -12,9 +12,9 @@ description: >-
 
 # Splitting work into tasks
 
-Most specs become exactly one task packet — if that's true here, write it and stop. Split when
-the work is too big for one agent run, or when several agents will work in parallel and a
-collision would be expensive. The output is N task packets (template at
+Most work is one spec → one implementer — **no task packet**; the implementer fills the spec's
+`## Execution` section. Cut tasks only when the work is too big for one agent run, or when several
+agents will work in parallel and a collision would be expensive. The output is N task packets (template at
 `templates/task.md`), each self-contained, plus a few lines
 recording the order they run in.
 

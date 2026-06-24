@@ -35,7 +35,8 @@ table — every row Unverified; the change-plan coverage table and the rest you 
    not Pass. _Why: a paste shows the command ran at some past moment, not that
    it passes now._
 3. **Fill the requirement coverage table** — one row per AC in the task's
-   scope; result is one of Pass · Fail · Unverified · Blocked. A Pass needs
+   scope (or the spec's ACs, for 1:1 work with no task); result is one of
+   Pass · Fail · Unverified · Blocked. A Pass needs
    pasted output, a CI link, or, for a manual Verify method, a named human's
    recorded observation (who judged, what they saw). **An empty Evidence cell
    means Unverified, never Pass.** Read the task packet's `## Run summary`
