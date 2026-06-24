@@ -17,6 +17,15 @@ not customized (see `docs/ADOPTING.md` → _Upgrading_ in the Corpus repo).
 - `.gitignore.additions` — ignore `*.corpus-bak` backups left by `corpus update --write` (corpus-cli),
   so they are not committed or flagged as out-of-scope changes by `corpus review`.
 
+### Changed
+
+- Spec template + `write-spec`: the `## Open questions` section is now filled with **options + a
+  recommendation** (a decidable fork), not a bare question — the section name and C006 are unchanged
+  (corpus ADR-0101).
+- `advanced/checks-reference.md` + `advanced/sol-reference.md` are now **pointers** to the canonical
+  `docs/reference/` instead of duplicated copies (they had drifted); `spec-check` points at the canon
+  (corpus ADR-0102).
+
 ## [1.3.0] - 2026-06-22
 
 ### Added
