@@ -6,6 +6,12 @@ source:
   # - CHANGE-{{slug}}   (when the work executes a change-plan wave)
 scope: [AC-001, AC-002]
 status: ready
+# Implementation handoff (optional — filled at review-ready; the lead or CI may fill):
+# branch:        # the implementation branch
+# base:          # branch it forks from
+# worktree:      # path, if run in an isolated worktree
+# pr:            # PR number or URL
+# review_packet: # expected review path, e.g. reviews/<slug>.md
 ---
 
 # Task: {{title}}
