@@ -16,6 +16,11 @@ not customized (see `docs/ADOPTING.md` → _Upgrading_ in the Corpus repo).
 
 - `.gitignore.additions` — ignore `*.corpus-bak` backups left by `corpus update --write` (corpus-cli),
   so they are not committed or flagged as out-of-scope changes by `corpus review`.
+- **Implementation-depth skills** `write-feature`, `write-fix`, `write-refactor`, `write-rewrite`,
+  `write-migration`, `write-performance`, `write-testing`, `write-documentation` — **relocated into the
+  kit** from the corpus-skills catalog (corpus ADR-0112). They implement a Corpus task packet of a given
+  kind, so they are Corpus-coupled and belong with the other Corpus skills; the catalog is now
+  framework-free (universal stances + disciplines only). Opt-in depth — summon the kind your task needs.
 
 ### Removed
 

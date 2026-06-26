@@ -20,7 +20,10 @@ AGENTS.md            the bootloader (CLAUDE.md / GEMINI.md are symlinks to it)
 .agents/skills/      the core guides — write-spec, implement-task, review-output — plus the
                      workspace authoring guides: write-audit, write-research, write-rfc,
                      write-prd, write-bug-report, write-change-plan, write-inventory,
-                     spec-check, split-work, save-findings
+                     spec-check, split-work, save-findings — plus the opt-in
+                     implementation depth: write-feature, write-fix, write-refactor,
+                     write-rewrite, write-migration, write-performance, write-testing,
+                     write-documentation (summon the kind your task needs)
 .claude/skills       symlink -> .agents/skills — Claude Code discovers the guides natively
 templates/           the eight core artifact templates — spec, task, review, finding,
                      status, intake, inventory, change-plan
