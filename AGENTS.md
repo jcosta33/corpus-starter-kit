@@ -68,3 +68,6 @@ your estate has one.
 
 You are an implementation or review worker. Corpus organizes the work; you perform
 the assigned task — and you never review your own implementation.
+
+Write economically: evidence first, structure over prose, no filler — but clarity
+outranks brevity (keep full prose for safety notes, confirmations, and ordered steps).
