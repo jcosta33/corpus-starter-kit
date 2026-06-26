@@ -4,6 +4,10 @@ id: REVIEW-{{slug}}
 task: TASK-{{slug}}
 # spec: SPEC-…   # use INSTEAD of task: for a 1:1 review with no task — coverage then reconciles against
 #                # the whole spec's ACs (ADR-0103 review-to-spec). task: takes precedence when both are set.
+# reviewed_sha: <sha>     # OPTIONAL fast-track (ADR-0107): the commit you reviewed, plus an
+# evidence_hash: <digest> # evidence digest (copy it from `corpus review --json` / the report header).
+#                         # `corpus review` re-validates the digest and flags the review Stale (re-review)
+#                         # if the diff or the cited evidence drifts — detection, never a self-verdict.
 pr: { { pr-url — or "none yet" for a pre-PR or trunk-based review } }
 reviewer: { { the review lead — never the implementer (the spec/task author may, if they didn't implement) } }
 status: { { draft | pass | waived | blocked | needs-human } }
