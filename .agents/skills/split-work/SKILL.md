@@ -52,8 +52,7 @@ files. So when you cut:
   and its integration separately rather than as one tangled blob.
 
 This buys _cleaner_ reviews — fewer false positives at the same defect yield — not more bugs caught;
-that is reason enough. It is a convention; nothing sizes a task for you. (Grounding + the optional
-oversized-packet heuristic: [Corpus ADR-0094](https://github.com/jcosta33/corpus/blob/main/docs/adrs/0094-decomposition-and-risk-weighted-review.md).)
+that is reason enough. It is a convention; nothing sizes a task for you.
 
 ## Tasks that share files are not independent
 
@@ -123,7 +122,7 @@ spec id and the version/commit it was cut against — and place the task in the 
 gitignored `.corpus/`. The implementer then reads the pinned snapshot, not a cross-repo path,
 and the spec cannot drift mid-task. Re-cut the task if the canonical spec changes materially.
 The external workspace stays canonical; the in-code copy is a marked execution snapshot, not
-authoritative. (Grounding: [Corpus ADR-0100](https://github.com/jcosta33/corpus/blob/main/docs/adrs/0100-spec-external-ops-local-mode.md).)
+authoritative.
 
 ## Gotchas
 
