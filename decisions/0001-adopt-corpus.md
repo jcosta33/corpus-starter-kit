@@ -21,8 +21,10 @@ This repository is our Corpus workspace:
 
 - Durable intent lives in `specs/<feature>/spec.md`; supporting docs sit
   beside it.
-- Work flows through committed artifacts: `intake/`, `tasks/`, `reviews/`,
-  `findings/`; `status.md` is the board.
+- The committed record is `specs/`, `findings/`, `decisions/`, and `status.md`
+  (the board). `intake/`, `tasks/`, and `reviews/` are a gitignored ephemeral
+  working set (ADR-0104) — their durable residue lives in the spec's
+  `## Execution`, in `findings/`, and in the merged PR.
 - Every agent task starts from a task packet; every result is judged through
   a review packet — a Pass needs pasted output, a CI link, or, for a manual
   check, a named human's recorded observation.

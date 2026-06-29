@@ -98,7 +98,7 @@ Before declaring the task done:
 
 ## Gotchas
 
-Failure modes that show up at run time, not in the rules:
+The same failure modes as the rules, shown as the run-time scenario that produces each:
 
 - **You patched the symptom, not the root cause** — swallowed the error, clamped the value, or
   special-cased the one triggering input — so the suite goes green and the cause stays live,

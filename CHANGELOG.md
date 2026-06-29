@@ -28,15 +28,15 @@ not customized (see `docs/ADOPTING.md` → _Upgrading_ in the Corpus repo).
   *style* is not a Corpus concept (Corpus mandates the review artifact, not how you review). Install it
   with `npx skills add jcosta33/corpus-skills --skill adversarial-review`. `review-output` (which builds
   the review packet) stays in the kit.
+- `advanced/` and `examples/` directories — **dropped** (corpus ADR-0105): the ADR shape moved into
+  `templates/adr.md`, the reference cards were already single-sourced to the canonical
+  `docs/reference/`, and the worked example chain lives in the Corpus repo's `docs/examples/`.
 
 ### Changed
 
 - Spec template + `write-spec`: the `## Open questions` section is now filled with **options + a
   recommendation** (a decidable fork), not a bare question — the section name and C006 are unchanged
   (corpus ADR-0101).
-- `advanced/checks-reference.md` + `advanced/sol-reference.md` are now **pointers** to the canonical
-  `docs/reference/` instead of duplicated copies (they had drifted); `spec-check` points at the canon
-  (corpus ADR-0102).
 - **Spec is the unit of work; the task is an on-demand split slice** (corpus ADR-0103). The spec
   template gains an append-only `## Execution` section the implementer fills for 1:1 work — no task
   file unless the spec splits into parallel slices. The task template, `split-work`, `implement-task`,

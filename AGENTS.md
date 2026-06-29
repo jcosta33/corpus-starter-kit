@@ -6,16 +6,18 @@
 
 ## Corpus startup
 
-1. Read the task packet you were given first. Follow its scope.
+1. Read the task packet you were given first; for 1:1 work with no task (ADR-0103
+   — the common case), read the spec directly. Follow its scope.
 2. Read the linked spec (and change plan, if any) before touching code.
-3. Do not implement behavior outside the task's scope — if a requirement can't be
+3. Do not implement behavior outside scope — if a requirement can't be
    met as written, stop and say why instead of improvising.
-4. Run every item under the task's `## Verify` and paste the real output. A claim
-   without output counts as unverified.
-5. Before finishing, re-read your own diff as a skeptic, fill the task's
-   `## Run summary` section (changed files, per-command results citing the
-   Verify pastes, out-of-scope edits, blocked questions), and flip the task's
-   board row in `status.md` to review-ready.
+4. Run every Verify item (the spec's, or the task's `## Verify` for a split
+   slice) and paste the real output. A claim without output counts as unverified.
+5. Before finishing, re-read your own diff as a skeptic, record the run — for 1:1
+   work fill the spec's `## Execution` section, for a split task the task's
+   `## Run summary` (changed files, per-command results citing the Verify pastes,
+   out-of-scope edits, blocked questions) — and flip the board row in `status.md`
+   to review-ready.
 
 ## Workspace
 

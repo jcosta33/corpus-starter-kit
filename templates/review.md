@@ -8,9 +8,9 @@ task: TASK-{{slug}}
 # evidence_hash: <digest> # evidence digest (copy it from `corpus review --json` / the report header).
 #                         # `corpus review` re-validates the digest and flags the review Stale (re-review)
 #                         # if the diff or the cited evidence drifts — detection, never a self-verdict.
-pr: { { pr-url — or "none yet" for a pre-PR or trunk-based review } }
-reviewer: { { the review lead — never the implementer (the spec/task author may, if they didn't implement) } }
-status: { { draft | pass | waived | blocked | needs-human } }
+pr: "{{pr-url — or 'none yet' for a pre-PR or trunk-based review}}"
+reviewer: "{{the review lead — never the implementer (the spec/task author may, if they didn't implement)}}"
+status: "{{draft | pass | waived | blocked | needs-human}}"
 ---
 
 # Review: {{title}}

@@ -50,12 +50,20 @@ candidate, don't split it yourself.
 ## The writing-rules watchlist
 
 Then re-read each requirement for the word families that predict an agent interpreting it
-differently than meant: subjective words (robust, clean, seamless) · non-verifiable qualities
-(fast, secure, scalable) · vague verbs (handle, support, manage) · loopholes (where feasible,
-if practical) · vague qualifiers (significant, as needed) · comparatives with no baseline
-(better, faster) · ambiguous quantifiers (all, any, some) · bundling connectives joining
-separable behaviors · ambiguous exceptions (unless, except where) · vague references (it,
-this, the above).
+differently than meant:
+
+| Word family               | Examples                          |
+| ------------------------- | --------------------------------- |
+| Subjective words          | robust, clean, seamless           |
+| Non-verifiable qualities  | fast, secure, scalable            |
+| Vague verbs               | handle, support, manage           |
+| Loopholes                 | where feasible, if practical      |
+| Vague qualifiers          | significant, as needed            |
+| Comparatives, no baseline | better, faster                    |
+| Ambiguous quantifiers     | all, any, some                    |
+| Bundling connectives      | joining separable behaviors       |
+| Ambiguous exceptions      | unless, except where              |
+| Vague references          | it, this, the above               |
 
 Apply the **same-line rule**: a risky word is fine when the same line makes it checkable — it
 names who does what to what, gives a number with units, or points at a named test. If the line

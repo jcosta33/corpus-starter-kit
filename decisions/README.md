@@ -16,4 +16,7 @@ These rules are a convention — nothing in the workspace enforces them. The
 ledger is only useful if every entry can be trusted not to have been
 rewritten.
 
-`0001-adopt-corpus.md` is the seed entry. Copy its shape for the next decision.
+`0001-adopt-corpus.md` is the seed entry — a worked example of an accepted decision.
+Copy `templates/adr.md` for the next decision: it carries the full shape (the
+`owner:`/`sources:` frontmatter and the `## Alternatives considered` / `## Status`
+sections the seed's adoption note omits).

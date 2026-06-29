@@ -35,6 +35,8 @@ your specs actually live.
 mkdir -p .github/workflows && cp hooks/corpus-check.yml .github/workflows/corpus-check.yml
 ```
 
-Then make **corpus check** a required status check in your branch-protection settings so a failing
-check blocks the merge. The workflow installs corpus-cli from source on each run; when corpus-cli
-ships to npm, swap the install step for `npm i -g <published-name>`.
+Then make the **`corpus-check`** status check required in your branch-protection settings so a
+failing check blocks the merge. Branch protection keys required checks by the job id (`corpus-check`,
+the `jobs:` key in the workflow — hyphen), not the workflow `name:` (`corpus check` — space), so
+select the hyphenated context. The workflow installs corpus-cli from source on each run; when
+corpus-cli ships to npm, swap the install step for `npm i -g <published-name>`.
