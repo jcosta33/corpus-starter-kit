@@ -1,4 +1,4 @@
-# Suspec starter kit — a complete workspace
+# Suspec starter kit
 
 This repository **is** a [Suspec](https://github.com/jcosta33/suspec) workspace. Copy it whole —
 as a new repo, or as a folder inside an existing project — fill in `AGENTS.md`, and run the loop.
