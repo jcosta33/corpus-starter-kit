@@ -1,7 +1,7 @@
 ---
 type: finding
 id: FINDING-{{slug}}
-status: candidate  # candidate · accepted · stale · quarantined
+status: candidate  # candidate · accepted · addressed · stale · quarantined (· in-progress for a living measurement record)
 owner: {{team-or-person}}
 from: {{TASK- / REVIEW- / AUDIT- / INV- id}}
 date: {{YYYY-MM-DD}}
@@ -16,7 +16,9 @@ related: [{{SPEC-x#AC-NNN}}]
      trusted. Mark a record `stale` when its `reviewed:` refresh is overdue or its sources no longer
      hold (re-verify to restore it). Mark a suspicious, conflicting, unsupported, or security-sensitive
      record `quarantined` (record the reason); a quarantined record is never retrieved as active. This
-     is a conservative-write discipline, not a performance claim. -->
+     is a conservative-write discipline, not a performance claim. `addressed` closes a finding whose
+     diagnosed defect was fixed — a `resolution:` field records how (the lesson may still be durable);
+     `in-progress` marks a living measurement record still accumulating data points. -->
 
 ## What we learned
 
