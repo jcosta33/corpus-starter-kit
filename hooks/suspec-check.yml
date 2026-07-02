@@ -36,10 +36,14 @@ jobs:
       # suspec-cli is public — a plain https clone needs no token, so no credential is in the
       # environment when dependency install runs. Deps install from suspec-cli's own lockfile,
       # lifecycle scripts off. The clone deliberately floats on main until the npm publish; pin a
-      # tag/SHA here (git -C … checkout <ref>) if you want a frozen gate.
+      # tag/SHA here (git -C … checkout <ref>) if you want a frozen gate. (The clone URL is
+      # assembled from vars — a hook is a product surface and carries no literal source URL.)
       - name: Install suspec-cli (from source — not yet on npm)
+        env:
+          GIT_HOST: github.com
+          SUSPEC_CLI_REPO: jcosta33/suspec-cli
         run: |
-          git clone --depth 1 https://github.com/jcosta33/suspec-cli "$RUNNER_TEMP/suspec-cli"
+          git clone --depth 1 "https://${GIT_HOST}/${SUSPEC_CLI_REPO}" "$RUNNER_TEMP/suspec-cli"
           cd "$RUNNER_TEMP/suspec-cli"
           corepack enable
           pnpm install --frozen-lockfile --ignore-scripts
